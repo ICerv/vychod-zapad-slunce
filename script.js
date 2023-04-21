@@ -26,7 +26,31 @@ document.querySelector('.showBtn').addEventListener('click', btnClick);
 
 
 
+//RESENI Z KODIM
 
+/*  HTML
+<div class="container">
+      <button id="show">Ukázat</button>
+      <div id="sunrise-sunset"></div>
+    </div>
+*/
+
+/*
+const showBtn = document.querySelector('#show');
+showBtn.addEventListener('click', () => {
+  fetch('https://api.sunrise-sunset.org/json?lat=50&lng=14.5')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      const { sunrise, sunset } = data.results;
+      document.querySelector('#sunrise-sunset').innerHTML = `
+        <p>Východ slunce: ${sunrise}</p>
+        <p>Západ slunce: ${sunset}</p>
+      `;
+    });
+});
+*/
 
 
 
